@@ -10,15 +10,15 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>10</java.version> <!-- we are on java 10...   -->
+        <java.version>11</java.version> <!-- we are on java 10...   -->
         <maven.compiler.source>${java.version}</maven.compiler.source> 
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <!--<maven.compiler.release>${java.version}</maven.compiler.release>-->
         <slf4j.version>1.7.25</slf4j.version>
         <!--<spock.version>1.1-groovy-2.4</spock.version>-->
-        <spock.version>1.2-RC1-groovy-2.5</spock.version>
-        <groovy.version>2.5.2</groovy.version>
-        <gmaven.plugin.version>1.6.1</gmaven.plugin.version>
+        <spock.version>1.2-groovy-2.5</spock.version>
+        <groovy.version>2.5.5</groovy.version>
+        <gmaven.plugin.version>1.6.2</gmaven.plugin.version>
         <maven.compiler.version>3.8.0</maven.compiler.version>
     </properties>
 
@@ -104,21 +104,21 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>compile</goal>
+                            <!--<goal>compile</goal>-->
                             <goal>compileTests</goal>
                             <!--<goal>testCompile</goal>-->
                         </goals>
                     </execution>
                 </executions>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.codehaus.groovy</groupId>
-                        <artifactId>groovy-all</artifactId>
-                        <version>${groovy.version}</version>
-                        <scope>runtime</scope>
-                        <type>pom</type>
-                    </dependency>
-                </dependencies>
+                <!--<dependencies>-->
+                    <!--<dependency>-->
+                        <!--<groupId>org.codehaus.groovy</groupId>-->
+                        <!--<artifactId>groovy-all</artifactId>-->
+                        <!--<version>${groovy.version}</version>-->
+                        <!--<scope>runtime</scope>-->
+                        <!--<type>pom</type>-->
+                    <!--</dependency>-->
+                <!--</dependencies>-->
             </plugin>
 
             <!-- Compiler plugin needs some Java9 config-->
